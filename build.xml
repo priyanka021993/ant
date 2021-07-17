@@ -8,7 +8,7 @@
                 <javac srcdir="src" destdir="build/classes" />
         </target>
         <target name="compress" depends="compile">
-                <jar destfile="dist/Gspann.jar" basedir="build/classes" />
+                <jar destfile="ant.jar" basedir="build/classes" />
         </target>
         <target name="execute" depends="compile">
                 <java classname="com.vaannila.helloworld.HelloWorld" classpath="build/classes" />
